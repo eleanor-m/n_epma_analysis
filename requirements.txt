@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+python-dotenv
+lmfit
+xlsxwriter
+xlrd
+scipy
+periodictable
