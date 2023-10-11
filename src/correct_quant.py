@@ -113,7 +113,7 @@ class Spot:
             (self.bg['upr_cps'] * self.bg['time']))
                                 / self.bg['time'])
 
-    def correct_bg(self, fit_parameter_file):
+    def correct_bg(self, fit_parameter_file, path_out):
 
         """ Takes parameters of a lorentzian curve from fit_parameter_file and
         fits a new lorentzian curve to the four background measurements.
@@ -152,13 +152,13 @@ class Spot:
         corrected_bg = modelout.eval(x=self.peak.pos[idx])
         pk_cps_corrected = self.peak.raw_cps[idx] - corrected_bg
 
-        filename = self.info.date + '_' + self.info.comment
+        sample_name = self.info.date + '_' + self.info.comment
 
         plot_background_correction(
             modelout, self.peak.pos[idx], self.peak.raw_cps[idx], bg_pos,
-            bg_cps, filename,
+            bg_cps, sample_name, save_path=Path(path_out, sample_name),
             annotate_cps=True,
-            figure_axis=None, save=True)
+            figure_axis=None)
 
         # Remove the 'dummy' analysis line
         self.corrected = self.peak.copy(deep=True).drop(
@@ -255,7 +255,7 @@ class Spot:
             'kraw_pcnt': kraw_pcnt,
             'kraw_stdev_pcnt': kraw_stdev_pcnt})
 
-    def correct_bg_mc(self, fit_parameter_file, sample_name,
+    def correct_bg_mc(self, fit_parameter_file, path_out, sample_name,
                       num_mc_sims=200):
 
         """ Use a monte-carlo simulation to correct for the curved background
@@ -331,10 +331,9 @@ class Spot:
             # Add this to the figure
             xlims, ylims = plot_background_correction(
                 modelout, self.peak.pos[idx], pk_cps_raw[i], bg_pos,
-                bg_cps[i, :], self.info.comment,
+                bg_cps[i, :], self.info.comment, save_path=None,
                 annotate_cps=False,
-                figure_axis=ax, save=False)
-
+                figure_axis=ax)
 
         mean_from_mc = [np.mean(pk_cps_net_corrected), np.mean(bg_cps_corrected)]
         stdev_pcnt_from_mc = [np.std(pk_cps_net_corrected) * 100 / mean_from_mc[0],
@@ -371,12 +370,7 @@ class Spot:
 
         filename = self.info.date + '_' + self.info.comment
 
-        # Check if folder exists, if not, create it
-        CHECK_FOLDER = os.path.isdir(Path('./bg_corrections/'))
-        if not CHECK_FOLDER:
-            os.makedirs(Path('./bg_corrections/'))
-
-        plt.savefig(Path('./bg_corrections/bg_mc_' + filename + '.png'), dpi=600)
+        plt.savefig(Path(path_out, 'bg_mc_' + filename + '.png'), dpi=600)
         plt.close()
         print('Saved montecarlo bg correction figure for ' + filename)
 
@@ -511,11 +505,17 @@ def fit_quant_bg(datax, datay, par_dict, guess_params=None):
     return fitted_curve
 
 
-def plot_background_correction(out, pk_pos, pk_cps,
-                               bg_pos, bg_cps, sampleName,
-                               annotate_cps=True,
-                               figure_axis=None,
-                               save=False):
+def plot_background_correction(
+        out, 
+        pk_pos, 
+        pk_cps,
+        bg_pos, 
+        bg_cps, 
+        sample_name,
+        save_path=None,
+        annotate_cps=True,
+        figure_axis=None,
+        ):
 
     newx = np.arange(120.0, 180.0, 0.2)
     corrected_bg = out.eval(x=pk_pos)
@@ -568,18 +568,15 @@ def plot_background_correction(out, pk_pos, pk_cps,
     plt.xlabel('L (mm)')
     plt.ylabel('cps')
 
-    plt.title(sampleName)
+    plt.title(sample_name)
 
-    if save == True:
-
-        # Check if folder exists, if not, create it
-        CHECK_FOLDER = os.path.isdir(Path('./bg_corrections/'))
-        if not CHECK_FOLDER:
-            os.makedirs(Path('./bg_corrections/'))
-
-        plt.savefig(Path('./bg_corrections/bg_' + sampleName + '.pdf'))
+    if save_path is not None:
+        folder_exists = os.path.isdir(Path(save_path).parent)
+        if not folder_exists:
+            print("Can't save because the folder doesn't exist")
+        plt.savefig(Path(save_path))
         plt.close()
-        print('Saved bg correction figure for ' + sampleName)
+        print('Saved bg correction figure for ' + sample_name)
 
     return xlims, ylims
 
@@ -665,7 +662,7 @@ def calc_kraw_stdev(unk_cps_net, std_cps_net, unk_cps_stdev_pcnt,
 
 
 
-def process_datasets(myspot, datalist, num_mc_sims):
+def process_datasets(myspot, datalist, num_mc_sims, path_out):
 
     for i in range(len(myspot)):
 
@@ -673,15 +670,17 @@ def process_datasets(myspot, datalist, num_mc_sims):
               myspot[i].info.comment)
 
         print('Correcting background') # -----------------
-        myspot[i].correct_bg(datalist.paramfile[i])
+        myspot[i].correct_bg(datalist.paramfile[i], path_out=path_out)
 
         print('Resample cps to check stdev method') # -----------------
         myspot[i].resample_cps(num_mc_sims=100)
 
         print('Montecarlo background correction') # -----------------
-        myspot[i].correct_bg_mc(datalist.paramfile[i],
-                                num_mc_sims=num_mc_sims, sample_name=myspot[
-                i].info.comment)
+        myspot[i].correct_bg_mc(
+            datalist.paramfile[i],
+            path_out=path_out,
+            num_mc_sims=num_mc_sims,
+            sample_name=myspot[i].info.comment)
 
         # print('check montecarlo behaviour') # -----------------
         # check_mc_behaviour(myspot[i])
