@@ -113,9 +113,9 @@ class Spot:
             (self.bg['upr_cps'] * self.bg['time']))
                                 / self.bg['time'])
 
-    def correct_bg(self, fit_parameter_file, path_out):
+    def correct_bg(self, path_out):
 
-        """ Takes parameters of a lorentzian curve from fit_parameter_file and
+        """ Takes parameters of a lorentzian curve stored in self.wd_scan_params and
         fits a new lorentzian curve to the four background measurements.
         The only variable parameter in the fit is the amplitude and the
         constant (c) so the 'shape' of the background curve remains the same.
@@ -124,9 +124,6 @@ class Spot:
         value, and hence the 'true' net_cps value. This new net_cps value is
         put into a copy of the .peak dataframe, stored now as
         .corrected and with the 'dummy' nitrogen line removed.
-
-        fit_parameter_file is a file containing a dictionary of fit
-        parameters
 
         """
         idx = self.idx_N[0]  # index of the element to be corrected
@@ -153,6 +150,7 @@ class Spot:
         pk_cps_corrected = self.peak.raw_cps[idx] - corrected_bg
 
         sample_name = self.info.date + '_' + self.info.comment
+        sample_name = sample_name.replace(".", "-") # can't have dots in filename
 
         plot_background_correction(
             modelout, self.peak.pos[idx], self.peak.raw_cps[idx], bg_pos,

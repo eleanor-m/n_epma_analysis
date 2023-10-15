@@ -325,17 +325,6 @@ def write_fit_params(out, comment, save_to='default'):
 
         print('Parameters not saved')
 
-    elif save_to == 'default':
-
-        helper_funs.make_folder_if_it_does_not_exist(Path('./wd_scans/fits/'))
-
-        with open(Path('./wd_scans/fits/report_' + comment + '.txt'), 'w') as f:
-            f.writelines(report)
-
-        json.dump(par_dict,
-              open(Path('./wd_scans/fits/key_params_' + comment + '.txt'), 'w'))
-        print('Saved fit parameters for ' + comment)
-
     elif isinstance(save_to, Path) : # if path is specified
         json.dump(par_dict,
               open(save_to / f'key_params_{comment}.txt', 'w'))
@@ -345,7 +334,7 @@ def write_fit_params(out, comment, save_to='default'):
 
         print('Saved fit parameters for ' + comment)
     else:
-        raise Exception(f'The save_to argument {save_to} of type {type(save_to)} is not allowed. It must be either None, "default" or a pathlib.Path object.')
+        raise Exception(f'The save_to argument {save_to} of type {type(save_to)} is not allowed. It must be either None, or a pathlib.Path object.')
 
     return par_dict
 
@@ -397,8 +386,6 @@ def fit_scans_together(data, fit_regions, path_out,
         'min_y' sets the  maximum to the minimum of the cps values. Otherwise 
         you could pass a numeric value in here to directly specify a maximum.
     """
-
-    helper_funs.make_folder_if_it_does_not_exist(path_out)
 
     # Select the data for fitting and store in a new list
     trimmed_data = []

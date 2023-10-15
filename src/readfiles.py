@@ -84,7 +84,7 @@ def import_jeol_wdscans(subfolder,
     if subfolder.exists() == False:
          raise FileNotFoundError('Incorrect folder name {}'.format(subfolder))
     elif my_data_file.exists() == False:
-        folder_contents = subfolder.glob('*')
+        folder_contents = list(subfolder.glob('*'))
         raise FileNotFoundError(
                'Did not find the file {} under folder {}. \nInstead found {}. \nCheck file structure.'.format(
                      scan_filename, subfolder, folder_contents))
