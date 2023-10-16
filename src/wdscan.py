@@ -42,9 +42,7 @@ def plot_wdscan(comments, data, save_to='default', cps_per_nA=True):
         data with columns L and cps
     save_to : str or None
         If None, figure is not saved to file.
-        If str, 'default' will save it to a default folder
-        ./figures/[comments].pdf.
-        Otherwise, specify a custom path to save to.
+        Otherwise, specify a custom path to save to including filename
     """
 
     fig, ax = plt.subplots()
@@ -76,12 +74,6 @@ def plot_wdscan(comments, data, save_to='default', cps_per_nA=True):
     # ---- Save the figure to a file ----
     if save_to is None:
         print('Figure not saved')
-
-    elif save_to == 'default':
-        helper_funs.make_folder_if_it_does_not_exist(Path('./wd_scans/figures/'))
-
-        plt.savefig(Path('./wd_scans/figures/' + comments + '.pdf'))
-        print('Saved figure for ' + comments)
 
     else: # if path is specified
         plt.savefig(save_to)

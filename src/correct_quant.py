@@ -253,8 +253,7 @@ class Spot:
             'kraw_pcnt': kraw_pcnt,
             'kraw_stdev_pcnt': kraw_stdev_pcnt})
 
-    def correct_bg_mc(self, fit_parameter_file, path_out, sample_name,
-                      num_mc_sims=200):
+    def correct_bg_mc(self, path_out, num_mc_sims=200):
 
         """ Use a monte-carlo simulation to correct for the curved background
 
@@ -295,10 +294,6 @@ class Spot:
                                     size=num_mc_sims, random_state=None)
             # Note: In the norm.rvs function, the keywords:
             # loc = midpoint of normal distribution; scale = standard deviation.
-
-
-        if type(fit_parameter_file) == str: # Convert to path object
-            fit_parameter_file = Path(fit_parameter_file)
 
         pk_cps_net_corrected = np.empty(shape=(num_mc_sims, 1))
         bg_cps_corrected = np.empty(shape=(num_mc_sims, 1))
@@ -668,17 +663,15 @@ def process_datasets(myspot, datalist, num_mc_sims, path_out):
               myspot[i].info.comment)
 
         print('Correcting background') # -----------------
-        myspot[i].correct_bg(datalist.paramfile[i], path_out=path_out)
+        myspot[i].correct_bg(path_out=path_out)
 
         print('Resample cps to check stdev method') # -----------------
         myspot[i].resample_cps(num_mc_sims=100)
 
         print('Montecarlo background correction') # -----------------
         myspot[i].correct_bg_mc(
-            datalist.paramfile[i],
             path_out=path_out,
-            num_mc_sims=num_mc_sims,
-            sample_name=myspot[i].info.comment)
+            num_mc_sims=num_mc_sims)
 
         # print('check montecarlo behaviour') # -----------------
         # check_mc_behaviour(myspot[i])
