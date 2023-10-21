@@ -807,7 +807,7 @@ def create_detection_limit_spot(spot):
 
     print("old kraw:", spot.montecarlo.loc[spot.idx_N[0], 'kraw_pcnt'])
 
-    detlim_spot = copy.copy(spot)
+    detlim_spot = copy.deepcopy(spot)
 
     # Update value
     detlim_spot.montecarlo.loc[detlim_spot.idx_N[0], 'kraw_pcnt'] = kraw  
