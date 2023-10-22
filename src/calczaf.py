@@ -457,3 +457,9 @@ def process_calczaf_outputs(folderpath, valence_file, detlim = False):
     if not detlim:
         write_summary_tables(folderpath, wtdata, oxidedata, atdata, datanames)
     write_tables(folderpath, wtdata, oxidedata, atdata, datanames, detlim=detlim)
+
+    return dict(
+        wtdata=dict(zip(datanames, wtdata)),
+        atdata=dict(zip(datanames, atdata)),
+        oxidedata=dict(zip(datanames, oxidedata))
+    )
