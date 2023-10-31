@@ -538,18 +538,21 @@ def rename_folders_as_comments(folder, new_folder):
         new_folder = Path(new_folder)
 
     data_folders = sorted(list(folder.glob('[!.]*')))
+    # remove anything that isn't a directory from the list
+    data_folders = [Path(f) for f in data_folders if Path(f).is_dir()]
+    print(data_folders)
 
     comments = [get_comment(f) for f in data_folders]
     comments = [c.replace(' ','_') for c in comments]  # Replace spaces with '_'
 
     for i in range(len(data_folders)):
 
-        oldname = data_folders[i].parts[1] # Remove first part of path
-        newname = Path.joinpath(new_folder, oldname + '_' + comments[i])
-        print('old name: {} \nnew name: {}'.format(data_folders[i], newname))
+            oldname = data_folders[i].parts[1] # Remove first part of path
+            newname = Path.joinpath(new_folder, oldname + '_' + comments[i])
+            print('old name: {} \nnew name: {}'.format(data_folders[i], newname))
 
-        shutil.copytree(data_folders[i], newname)
-        # os.rename(data_folders[i], newname)
+            shutil.copytree(data_folders[i], newname)
+            # os.rename(data_folders[i], newname)
 
 def read_and_organise_data(info, bgi=False, save=True):
     """ Reads data from raw files and returns data organised into
