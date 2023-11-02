@@ -191,8 +191,30 @@ def get_calczaf_export_files(folderpath):
 
 def read_calczaf_outputs(datafiles):
     # Specify the order in which elements are listed in the output excel file
-    element_order = 'Si Al Ca Mg Fe Mn Ti K Na P V Cr Co Ni Cu Zn ' \
-                    'Ga Ge Rb Sr Mo Ba Cl N H O'.split(' ')
+    major_els = 'Si Al Ca Mg Fe Mn Ti K Na O'.split(' ')
+    all_elements = [
+        'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne',
+        'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',
+        'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn',
+        'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y', 'Zr',
+        'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd', 'In', 'Sn',
+        'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'La', 'Ce', 'Pr', 'Nd',
+        'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb',
+        'Lu', 'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg',
+        'Tl', 'Pb', 'Bi', 'Th', 'Pa', 'U', 'Np', 'Pu', 'Am', 'Cm',
+        'Bk', 'Cf', 'Es', 'Fm', 'Md', 'No', 'Lr', 'Rf', 'Db', 'Sg',
+        'Bh', 'Hs', 'Mt', 'Ds', 'Rg', 'Cn', 'Nh', 'Fl', 'Mc', 'Lv',
+        'Ts', 'Og'
+    ] 
+
+    # Get the elements that are not in the element_order list
+    rest_of_elements = [element for element in all_elements if element not in set(major_els)]
+
+    # Concatenate the lists
+    major_els.remove("O")
+    element_order = major_els + rest_of_elements + ["O"]
+    element_order
+    
     element_wt_order = [el + ' WT%' for el in element_order]
     element_at_order = [el + ' AT%' for el in element_order]
     index_order = element_wt_order + ['TOTAL', 'Atomic percent:'] + element_at_order
