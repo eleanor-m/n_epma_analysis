@@ -1,0 +1,22 @@
+
+
+
+Unknown Specimen No. 2 
+ Path         : Eleanor         Project : 22122021_0005  
+ Position No. :    2            Comment : albite_2 
+ Stage        :    X=   22.5560  Y=  -20.8373  Z=   10.8580 
+ Acc. Voltage :    10.0 (kV)    Probe Dia. : 20.0    Scan : Off 
+ Dated on 2021/12/22 11:54:19 
+ WDS only       No. of accumulation : 1 
+
+Curr.(A) : 5.058E-08 
+Element Peak(mm) Net(cps)   Bg-   Bg+  S.D.(%)   D.L.(ppm)  K-raw(%)   
+ 1 N    146.893    -23.5  108.6   16.8  100.00 ?    238       0.000 
+ 2 N    146.893   -157.1  355.9    9.6  100.00 ?    442       0.000 Add 
+
+ZAF Metal  
+Element  Mass(%)   Atom(%)  K(%)  K-raw(%)   ZAF     Z       A       F    
+ N         0.000   0.0000   0.000   0.000  0.0000  0.0000  0.0000  0.0000 ?
+ ------------------------------------------------------------------------- 
+ Total     0.000   0.0000   0.000   0.000    Iteration = 1 
+

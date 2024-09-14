@@ -1,0 +1,35 @@
+
+
+
+Standard Measurement 
+WDS elements 
+Element  X-ray Crystal   CH  Acc.v   Peak Pos.     (nm)    BG_L    BG_U (mm) 
+ 1 N     Ka     LDE1L   ( 5)  10.0    146.893    3.16000  10.000  10.000
+
+Element   Peak  Back        Pksk  Gain  High.V Base.L Window.W  Mode 
+ 1 N      30.0  15.0 (s)       1    32   1650   0.7    9.3 (V)   Dif
+
+Standard Data 
+Element   Standard name    Mass(%)   ZAF Fac.   Z        A        F 
+ 1 N      BN                56.4464   9.3150  28.0328   0.3323   1.0000 
+
+Stage        :    X=   14.6070  Y=  -10.6688  Z=   10.9130 
+Acc. Voltage :    10.0 (kV)    Probe Dia. : 20.0    Scan : Off 
+Dated on 2021/12/22 11:09:34 
+WDS only       No. of accumulation : 5 
+
+Accumulations 
+Element   Net(cps) Bg-(cps) Bg+(cps) 
+N   1    2277.4     87.5     70.5 
+    2    2279.4     87.9     66.0 
+    3    2338.1     89.3     67.5 
+    4    2325.3     86.3     67.5 
+    5    2285.6     89.2     72.5 
+----------------------------------
+
+Standard Intensity of WDS 
+Curr.(A) : 5.054E-08   
+Elem.  Cryst. CH  L(mm)    Net(cps) Bg-(cps) Bg+(cps)  S.D.(%)  S.V.(%) D.L.(ppm)
+ 1 N   LDE1L  5 146.893    2301.2     88.1     68.8     0.18     1.23      251
+--------------------------------------------------------------------------------
+

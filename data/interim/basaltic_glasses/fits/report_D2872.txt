@@ -1,0 +1,21 @@
+[[Model]]
+    (Model(lorentzian) + Model(constant))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 9891
+    # data points      = 858
+    # variables        = 4
+    chi-square         = 11.9095181
+    reduced chi-square = 0.01394557
+    Akaike info crit   = -3661.89438
+    Bayesian info crit = -3642.87596
+    R-squared          = 0.99221849
+##  Warning: uncertainties could not be estimated:
+    c:          at boundary
+[[Variables]]
+    amplitude:  63224.5234 (init = 12.30465)
+    center:     107.903024 (init = 100)
+    sigma:      0.04323185 (init = 10)
+    c:          1.7422e-12 (init = 0.05440158)
+    fwhm:       0.08646371 == '2.0000000*sigma'
+    height:     465513.038 == '0.3183099*amplitude/max(1e-15, sigma)'

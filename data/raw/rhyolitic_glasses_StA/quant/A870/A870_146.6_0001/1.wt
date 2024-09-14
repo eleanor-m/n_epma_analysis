@@ -1,0 +1,22 @@
+
+
+
+Unknown Specimen No. 1 
+ Path         : Eleanor         Project : 15112021_0005  
+ Position No. :    1            Comment : A870_50nA_20um_146.6_spot-1 
+ Stage        :    X=   26.2775  Y=    2.2117  Z=   11.0890 
+ Acc. Voltage :    10.0 (kV)    Probe Dia. : 20.0    Scan : Off 
+ Dated on 2021/11/15 14:05:23 
+ WDS only       No. of accumulation : 1 
+
+Curr.(A) : 5.001E-08 
+Element Peak(mm) Net(cps)   Bg-   Bg+  S.D.(%)   D.L.(ppm)  K-raw(%)   
+ 1 N    146.606     18.6   85.2   20.7    5.67      250       2.839 
+ 2 N    146.606   -151.5  357.2    7.7  100.00 ?    533       0.000 Add 
+
+ZAF Metal  
+Element  Mass(%)   Atom(%)  K(%)  K-raw(%)   ZAF     Z       A       F    
+ N         0.000   0.0000   0.000   0.000  0.0000  0.0000  0.0000  0.0000 ?
+ ------------------------------------------------------------------------- 
+ Total     0.000   0.0000   0.000   0.000    Iteration = 1 
+

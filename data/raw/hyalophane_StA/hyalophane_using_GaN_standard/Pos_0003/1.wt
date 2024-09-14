@@ -1,0 +1,22 @@
+
+
+
+Unknown Specimen No. 3 
+ Path         : Eleanor         Project : 22122021_0009  
+ Position No. :    3            Comment : hyalophane_50nA_20um_GaNcalibr_7 
+ Stage        :    X=   25.4901  Y=    9.2551  Z=   11.1190 
+ Acc. Voltage :    10.0 (kV)    Probe Dia. : 20.0    Scan : Off 
+ Dated on 2021/12/22 14:29:23 
+ WDS only       No. of accumulation : 1 
+
+Curr.(A) : 5.041E-08 
+Element Peak(mm) Net(cps)   Bg-   Bg+  S.D.(%)   D.L.(ppm)  K-raw(%)   
+ 1 N    146.606    -13.3  110.1   20.2  100.00 ?    197       0.000 
+ 2 N    146.606   -135.1  331.7   11.7  100.00 ?    346       0.000 Add 
+
+ZAF Metal  
+Element  Mass(%)   Atom(%)  K(%)  K-raw(%)   ZAF     Z       A       F    
+ N         0.000   0.0000   0.000   0.000  0.0000  0.0000  0.0000  0.0000 ?
+ ------------------------------------------------------------------------- 
+ Total     0.000   0.0000   0.000   0.000    Iteration = 1 
+

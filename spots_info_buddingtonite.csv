@@ -1,0 +1,6 @@
+,folder,comment,sample,paramfile,apf,apf_sd,nA,date,spot_size_um
+0,data\raw\buddingtonite_ANU\raw_quant\Pos_0001,budd-01,buddingtonite,data\interim\buddingtonite_ANU\fits\key_params_buddingtonite.txt,0.819,0.013,20.03,2019-04-05,5.0
+1,data\raw\buddingtonite_ANU\raw_quant\Pos_0002,budd-02,buddingtonite,data\interim\buddingtonite_ANU\fits\key_params_buddingtonite.txt,0.819,0.013,20.009999999999998,2019-04-05,5.0
+2,data\raw\buddingtonite_ANU\raw_quant\Pos_0003,budd-03,buddingtonite,data\interim\buddingtonite_ANU\fits\key_params_buddingtonite.txt,0.819,0.013,20.0,2019-04-05,5.0
+3,data\raw\buddingtonite_ANU\raw_quant\Pos_0004,budd-04,buddingtonite,data\interim\buddingtonite_ANU\fits\key_params_buddingtonite.txt,0.819,0.013,20.009999999999998,2019-04-05,5.0
+4,data\raw\buddingtonite_ANU\raw_quant\Pos_0005,budd-05,buddingtonite,data\interim\buddingtonite_ANU\fits\key_params_buddingtonite.txt,0.819,0.013,20.009999999999998,2019-04-05,5.0

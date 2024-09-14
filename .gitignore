@@ -160,8 +160,9 @@ cython_debug/
 #.idea/
 
 # Data files & folders
-data
-*.csv
-*.pdf
+# data
+# *.csv
+# *.pdf
+# *.png
 
-figures/
+# figures/

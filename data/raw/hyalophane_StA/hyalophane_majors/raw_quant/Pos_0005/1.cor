@@ -1,0 +1,67 @@
+
+==============================================================================
+|                                   CITZAF                                   |
+|      Copyright, John T. Armstrong, California Institute of Technology      |
+|           JEOL On-line type Implemented by Paul Carpenter Caltech 1993     |
+|                   JEOL License of CITZAF Version:  3.50                    |
+|                                Oxide (PAP)                                 |
+==============================================================================
+
+
+Measurement Condition 
+WDS elements 
+Element  X-ray Crystal   CH  Acc.v   Peak Pos.     (nm)    BG_L    BG_U (mm) 
+ 1 Si    Ka     TAP     ( 1)  15.0     77.370    0.71254   2.700   3.500
+ 2 Al    Ka     TAP     ( 1)  15.0     90.608    0.83393   6.000   5.000
+ 3 Sr    La     PETL    ( 2)  15.0    219.670    0.68628   5.000   5.000
+ 4 Fe    Ka     LIFH    ( 3)  15.0    134.905    0.19360   2.000   2.000
+ 5 K     Ka     PETL    ( 4)  15.0    119.951    0.37414   5.000   5.000
+ 6 Ba    La     PETL    ( 4)  15.0     89.080    0.27759   4.000   5.000
+ 7 Na    Ka     TAPL    ( 5)  15.0    129.504    1.19101   5.000   5.000
+
+Element   Peak  Back        Pksk  Gain  High.V Base.L Window.W  Mode 
+ 1 Si     30.0  15.0 (s)       1    16   1700   0.7    9.3 (V)   Dif
+ 2 Al     30.0  15.0 (s)       1    16   1700   0.7    9.3 (V)   Dif
+ 3 Sr     60.0  30.0 (s)       1    32   1680   0.7     -  (V)   Int
+ 4 Fe     60.0  30.0 (s)       1    16   1700   0.7     -  (V)   Int
+ 5 K      30.0  15.0 (s)       1    32   1700   0.7     -  (V)   Int
+ 6 Ba     30.0  15.0 (s)       1    32   1700   0.7     -  (V)   Int
+ 7 Na     10.0   5.0 (s)       1    32   1700   0.7    9.3 (V)   Dif
+
+Measurement Order of WDS 
+Order     Channel 1           2           3           4           5          
+  1               Si_CH1_T    Sr_CH2_P    Fe_CH3_L    K_CH4_PE    Na_CH5_T    
+  2               Al_CH1_T    -           -           Ba_CH4_P    -           
+
+Calc. Elements :  O  (Anion)        
+
+Standard Data 
+Element   Standard name    Mass(%)    
+ 1 SiO2   Wollastonite      51.1268  
+ 2 Al2O3  Corundum          99.9949  
+ 3 SrO    Celestine         54.0000  
+ 4 Fe2O3  Fe_Metal         142.9722  
+ 5 K2O    Orthoclase        14.9250  
+ 6 BaO    Barite            65.6900  
+ 7 Na2O   Jadeite           15.2861  
+
+Standard Intensity of WDS 
+Element  Curr.(A)    Net(cps) Bg-(cps) Bg+(cps)  S.D.(%)  Date 
+ 1 Si   2.002E-08    11060.4    110.1     60.8     0.21   2021/11/10 11:25:46
+ 2 Al   2.000E-08    23160.1     48.7     37.2     0.12   2021/11/10 11:44:47
+ 3 Sr   2.001E-08     1222.6      4.9      3.8     0.41   2021/11/10 14:17:45
+ 4 Fe   2.000E-08    16295.8     79.0     86.2     0.12   2021/11/10 12:21:39
+ 5 K    2.001E-08     4944.6     27.7     19.9     0.23   2021/11/10 12:58:17
+ 6 Ba   2.001E-08    10022.8    160.0    111.5     0.16   2021/11/10 14:32:09
+ 7 Na   2.002E-08     4367.3     22.8     18.7     0.28   2021/11/10 13:09:38
+Standard Factors 
+Element  f(chi)    If/Ip     abs-el    1/s-el     r-el     c/k-el
+ Si      0.7814    0.0041    0.8620    0.9725    1.0062    1.1806
+ Al      0.7613    0.0000    0.8590    0.9289    1.0175    1.2318
+ Sr      0.7951    0.0062    1.0606    0.7510    1.1092    1.1250
+ Fe      0.9817    0.0000    1.0000    1.0000    1.0000    1.0000
+ K       0.8998    0.0004    0.9415    0.8656    1.0447    1.1742
+ Ba      0.9321    0.0000    1.0237    0.7364    1.0944    1.2122
+ Na      0.5018    0.0052    0.6039    0.9523    1.0034    1.7242
+-----------------------------------------------------------------
+

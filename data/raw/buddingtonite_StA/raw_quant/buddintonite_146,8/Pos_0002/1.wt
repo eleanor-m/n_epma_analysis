@@ -1,0 +1,26 @@
+
+
+
+Unknown Specimen No. 2 
+ Path         : Eleanor         Project : 01122021_0031  
+ Position No. :    2            Comment : budd_10nA_30s_03um_146.8mm_BNcalibr_02 
+ Stage        :    X=  -28.6119  Y=    1.7836  Z=   11.2435 
+ Acc. Voltage :    10.0 (kV)    Probe Dia. : 3.0    Scan : Off 
+ Dated on 2021/12/01 17:04:37 
+ WDS only       No. of accumulation : 1 
+
+Curr.(A) : 1.046E-08 
+Element Peak(mm) Net(cps)   Bg-   Bg+  S.D.(%)   D.L.(ppm)  K-raw(%)   
+ 1 Al    90.644   1294.9   26.0   13.0    0.63      220     109.846 
+ 2 Si   228.028    743.6    1.1    0.6    0.82      254     100.724 
+ 3 N    146.800     29.8   17.1    3.7    4.09     1038       6.055 
+ 4 N    146.800      3.6   63.1    2.4  124.55 ?   1947       0.728 Add 
+
+ZAF Oxide  
+Element  Mass(%)   Cation   K(%)  K-raw(%)   ZAF     Z       A       F    
+ Al2O3    20.278   3.3049  20.403 109.846  0.9939  1.0130  0.9829  0.9981  
+ SiO2     65.713   9.0862  64.856 100.724  1.0132  1.0131  0.9994  1.0007  
+ N2O       4.610   1.7403   4.863   5.483  0.9481  0.9772  0.9702  1.0000  
+ ------------------------------------------------------------------------- 
+ Total    90.601  14.1315  90.122 216.054    Total O  =  24.0    Iteration = 4 
+

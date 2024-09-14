@@ -1,0 +1,30 @@
+
+
+
+Unknown Specimen No. 23 
+ Path         : 08102021        Project : N_analyses_0008 
+ Position No. :   23            Comment : Edi09_50nA_20um_10accum_3 
+ Stage        :    X=  -22.4121  Y=    0.5937  Z=   11.1805 
+ Acc. Voltage :    10.0 (kV)    Probe Dia. : 20.0    Scan : Off 
+ Dated on 2021/10/09 01:03:44 
+ WDS only       No. of accumulation : 10 
+
+Curr.(A) : 5.015E-08 
+Element Peak(mm) Net(cps)   Bg-   Bg+  S.D.(%)  S.V.(%) D.L.(ppm)  K-raw(%)   
+ 1 N    146.701     -7.7   67.9   18.5  100.00 ? -17.61     91       0.000 
+ 2 N    146.701   -113.1  255.0    8.8  100.00 ?  -7.09    180       0.000 Add 
+
+Accumulations 
+Element   Net(cps) 
+N   1     -14.8     -16.8     -16.5     -18.8     -18.7 
+    6     -17.0     -15.7     -18.3     -17.4     -15.7 
+ N  1    -112.6    -105.9     -99.9    -111.4    -127.7 
+    6    -116.3    -107.2    -121.9    -116.6    -111.5 
+--------------------------------------------------------
+
+ZAF Metal  
+Element  Mass(%)   Atom(%)  K(%)  K-raw(%)   ZAF     Z       A       F    
+ N         0.000   0.0000   0.000   0.000  0.0000  0.0000  0.0000  0.0000 ?
+ ------------------------------------------------------------------------- 
+ Total     0.000   0.0000   0.000   0.000    Iteration = 1 
+
