@@ -9,7 +9,7 @@ Figures:
 1. Figure 1: Buddingtonite + Tobelite count logs
 2. Figure 2: Glass, Cs- and Pb-nitrate count logs
 3. Figure 3: Hyalophane background scans
-4. Figure 4: Four-point background correction method
+4. Figure 4: Four-point background correction method: `03_hyalophane_StA.ipynb`. This figure is based on a quantitative analysis of hyalophane so it is created in this notebook.
 5. Figure 5: How APF was obtained for nitrides ???
 6. Figure 6: How APF was obtained for glass and buddingtonite: `10_peak_shapes.ipynb`
 7. Figure 7: How APF and uncertainty was calculated: `11_peak_shape_fits.ipynb`
