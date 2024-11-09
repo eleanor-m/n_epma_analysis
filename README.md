@@ -38,6 +38,18 @@ Tables:
 APF values from table 2 are used in `data/_dictionaries/apf_values.csv` and `data/_dictionaries/apf_values_relative_to_BN.csv` for quantitative analysis.
 
 
-## 
 
+## Calczaf usage
 
+I was using CalcZAF v 13.2.4.
+
+Note that some standards used in this analysis are not in the default Calczaf standard database. They were added manually. A custom standard database is included under `data/calczaf-standard-db-custom.mdb` (this is not added to the git repo however at present).
+
+Be cautious about samples where N is specified as (NH4)2O: there's a bug in this version
+of calczaf that means the input files are not correctly read in.
+
+When you open the input file, it assigns 1 oxygen to each H cation, but there should be
+zero oxygens for each H cation with this speciation.
+
+Workaround: open the input file, manually edit the H valence selecting zero oxygens for each 1 cation. Close the file. This doesn't alter the file, but does alter the state
+of CalcZAF for the remainder of your session so that it should read files correctly after this.
