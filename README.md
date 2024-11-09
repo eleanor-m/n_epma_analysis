@@ -11,16 +11,16 @@ Figures:
 3. Figure 3: Hyalophane background scans
 4. Figure 4: Four-point background correction method
 5. Figure 5: How APF was obtained for nitrides ???
-6. Figure 6: How APF was obtained for glass and buddingtonite: `10_peak_shapes.ipynb` reads the data and transforms into a suitable format for subsequent calculations, and produces Figure 6.
-7. Figure 7: How APF and uncertainty was calculated: `11_peak_shape_fits.ipynb` performs the fits and produces Figure 7.
-8. Figure 8: APF results: `12_peak_shape_figures.ipynb` calculates APF values, produces Figure 8 and Table 2.
+6. Figure 6: How APF was obtained for glass and buddingtonite: `10_peak_shapes.ipynb`
+7. Figure 7: How APF and uncertainty was calculated: `11_peak_shape_fits.ipynb`
+8. Figure 8: APF results: `12_APF_relative_to_GaN.ipynb`
 9. Figure 9: Peak positions
 10. Figure 10: Measured vs reference values for the reference materials
 
 Tables:
 
 1. Table 1: List of reference materials
-2. Table 2: APF results
+2. Table 2: APF results: `12_APF_relative_to_GaN.ipynb` and `12_APF_relative_to_BN.ipynb` 
 3. Table 3: Buddingtonite quantitative results
 4. Table 4: Hyalophane quantitative results
 5. Table 5: Basaltic glasses - major/minor element quantitative results
@@ -32,5 +32,12 @@ Tables:
 
 1. Run `10_peak_shapes.ipynb` to read and transform the data, produce figure 5
 2. Run `11_peak_shape_fits.ipynb` to perform background and peak fits of original and MC simulated data, and produce figure 7
-3. Run `12_peak_shape_figures.ipynb` to calculate APF values, produce figure 8 and table 2.
+3. Run `12_APF_relative_to_GaN.ipynb` to calculate APF values, produce figure 8 and part of table 2.
+4. Run `12_APF_relative_to_BN.ipynb` to calculate APF values relative to BN. This also produces an alternative version of figure 8, and additional numbers added to table 2.
+
+APF values from table 2 are used in `data/_dictionaries/apf_values.csv` and `data/_dictionaries/apf_values_relative_to_BN.csv` for quantitative analysis.
+
+
+## 
+
 
