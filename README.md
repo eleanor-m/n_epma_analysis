@@ -11,6 +11,8 @@ Notebooks:
 - `05_basaltic_glasses_Nquant_D2893.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
 - `06_basaltic_glasses_Nquant_Edi09.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
 - `07_basaltic_glasses_Nquant_D2872.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
+- `08_rhyolitic_glasses.ipynb`: Fits wavescan, reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
+- `09_quant_summary_figure.ipynb`: Summarise all quantitative analyses in a figure.
 
 
 With reference to the paper, the figures and tables are listed below, pointing to the relevant notebooks to reproduce the data/figures.
@@ -26,7 +28,7 @@ Figures:
 7. Figure 7: How APF and uncertainty was calculated: `11_peak_shape_fits.ipynb`
 8. Figure 8: APF results: `12_APF_relative_to_GaN.ipynb`
 9. Figure 9: Peak positions
-10. Figure 10: Measured vs reference values for the reference materials
+10. Figure 10: Measured vs reference values for the reference materials: `09_quant_summary_figure.ipynb`
 
 Tables:
 
