@@ -34,11 +34,12 @@ Tables:
 
 1. Table 1: List of reference materials
 2. Table 2: APF results: `12_APF_relative_to_GaN.ipynb` and `12_APF_relative_to_BN.ipynb` 
-3. Table 3: Buddingtonite quantitative results
-4. Table 4: Hyalophane quantitative results
-5. Table 5: Basaltic glasses - major/minor element quantitative results: `04_basaltic_glasses.ipynb`
-6. Table 6: Basaltic glasses - nitrogen results
-7. Table 7: Rhyolitic glasses - nitrogen results
+3. Table 3: Buddingtonite quantitative results: `data/processed/buddingtonite_ANU/wt_pct_summary.csv` - created in `01_buddingtonite_ANU.ipynb`
+4. Table 4: Hyalophane quantitative results: `data/processed/hyalophane_StA/wt_pct_summary.csv` - created in `02_hyalophane_StA.ipynb`. The data in the csv is manually reshaped to produce Table 4.
+5. Table 5: Basaltic glasses - major/minor element quantitative results: `data/processed/basaltic_glasses/basaltic_glasses_majors_summary.csv` - created in `04_basaltic_glasses.ipynb`
+6. Table 6: Basaltic glasses - nitrogen results: Data is spread over four csv files (`data/processed/basaltic_glasses/N_summary_[sample].csv`) - produced in the relevant notebook for each sample. An easier way to get all the data is from `data/processed/nitrogen_summary_all_samples.csv` which is produced in `09_quant_summary_figure.ipynb`.
+7. Table 7: Rhyolitic glasses - nitrogen results `data/processed/rhyolitic_glasses/N_summary.ipynb` - created in `08_rhyolitic_glasses.ipynb`.
+
 
 
 ## Peak shapes:
@@ -49,6 +50,12 @@ Tables:
 4. Run `12_APF_relative_to_BN.ipynb` to calculate APF values relative to BN. This also produces an alternative version of figure 8, and additional numbers added to table 2.
 
 APF values from table 2 are used in `data/_dictionaries/apf_values.csv` and `data/_dictionaries/apf_values_relative_to_BN.csv` for quantitative analysis.
+
+## Uncertainties and detection limits:
+
+The N_summary.csv or nitrogen_summary.csv files for each sample contains the typical standard deviations on individual spots, typical detection limits, and the standard deviations of multiple spots.
+
+These are summarised in the footnotes of each table providing quantitative results in the paper.
 
 
 
