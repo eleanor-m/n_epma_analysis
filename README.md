@@ -19,21 +19,21 @@ With reference to the paper, the figures and tables are listed below, pointing t
 
 Figures:
 
-1. Figure 1: Buddingtonite + Tobelite count logs
-2. Figure 2: Glass, Cs- and Pb-nitrate count logs
-3. Figure 3: Hyalophane background scans
+1. Figure 1: Buddingtonite + Tobelite count logs: `10_count_logs.ipynb`
+2. Figure 2: Glass, Cs- and Pb-nitrate count logs: `10_count_logs.ipynb`
+3. Figure 3: Hyalophane background scans at different conditions: `11_wd_scans_at_different_conditions.ipynb`.
 4. Figure 4: Four-point background correction method: `02_hyalophane_StA.ipynb`. This figure is based on a quantitative analysis of hyalophane so it is created in this notebook.
-5. Figure 5: How APF was obtained for nitrides ???
-6. Figure 6: How APF was obtained for glass and buddingtonite: `10_peak_shapes.ipynb`
-7. Figure 7: How APF and uncertainty was calculated: `11_peak_shape_fits.ipynb`
-8. Figure 8: APF results: `12_APF_relative_to_GaN.ipynb`
+5. Figure 5: How APF was obtained for nitrides: `11_wd_scans_at_different_conditions.ipynb`.
+6. Figure 6: How APF was obtained for glass and buddingtonite: `12_peak_shapes.ipynb`
+7. Figure 7: How APF and uncertainty was calculated: `13_peak_shape_fits.ipynb`
+8. Figure 8: APF results: `14_APF_relative_to_GaN.ipynb`
 9. Figure 9: Peak positions
 10. Figure 10: Measured vs reference values for the reference materials: `09_quant_summary_figure.ipynb`
 
 Tables:
 
 1. Table 1: List of reference materials
-2. Table 2: APF results: `12_APF_relative_to_GaN.ipynb` and `12_APF_relative_to_BN.ipynb` 
+2. Table 2: APF results: `14_APF_relative_to_GaN.ipynb` and `15_APF_relative_to_BN.ipynb` 
 3. Table 3: Buddingtonite quantitative results: `data/processed/buddingtonite_ANU/wt_pct_summary.csv` - created in `01_buddingtonite_ANU.ipynb`
 4. Table 4: Hyalophane quantitative results: `data/processed/hyalophane_StA/wt_pct_summary.csv` - created in `02_hyalophane_StA.ipynb`. The data in the csv is manually reshaped to produce Table 4.
 5. Table 5: Basaltic glasses - major/minor element quantitative results: `data/processed/basaltic_glasses/basaltic_glasses_majors_summary.csv` - created in `04_basaltic_glasses.ipynb`
@@ -44,10 +44,10 @@ Tables:
 
 ## Peak shapes:
 
-1. Run `10_peak_shapes.ipynb` to read and transform the data, produce figure 5
-2. Run `11_peak_shape_fits.ipynb` to perform background and peak fits of original and MC simulated data, and produce figure 7
-3. Run `12_APF_relative_to_GaN.ipynb` to calculate APF values, produce figure 8 and part of table 2.
-4. Run `12_APF_relative_to_BN.ipynb` to calculate APF values relative to BN. This also produces an alternative version of figure 8, and additional numbers added to table 2.
+1. Run `12_peak_shapes.ipynb` to read and transform the data, produce figure 5
+2. Run `13_peak_shape_fits.ipynb` to perform background and peak fits of original and MC simulated data, and produce figure 7
+3. Run `14_APF_relative_to_GaN.ipynb` to calculate APF values, produce figure 8 and part of table 2.
+4. Run `15_APF_relative_to_BN.ipynb` to calculate APF values relative to BN. This also produces an alternative version of figure 8, and additional numbers added to table 2.
 
 APF values from table 2 are used in `data/_dictionaries/apf_values.csv` and `data/_dictionaries/apf_values_relative_to_BN.csv` for quantitative analysis.
 
