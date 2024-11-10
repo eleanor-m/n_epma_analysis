@@ -7,7 +7,10 @@ Notebooks:
 - `01_buddingtonite_ANU.ipynb`: Fits wavescan, reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results
 - `02_hyalophane_StA.ipynb`: Fits wavescan, reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results
 - `03_basaltic_glasses_majors_wavescans.ipynb`: Compiles major element analyses for basaltic glasses, inspects and selects wavescans to fit, and performs fits for all glasses
-- `04_basaltic_glasses_Nquant_D2872.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results
+- `04_basaltic_glasses_Nquant_Edi06.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results. Also, checks typical net cps at peak position to use this sample as a blank for other basaltic glasses.
+- `05_basaltic_glasses_Nquant_D2893.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
+- `06_basaltic_glasses_Nquant_Edi09.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
+- `07_basaltic_glasses_Nquant_D2872.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
 
 
 With reference to the paper, the figures and tables are listed below, pointing to the relevant notebooks to reproduce the data/figures.
@@ -47,7 +50,7 @@ APF values from table 2 are used in `data/_dictionaries/apf_values.csv` and `dat
 
 
 
-## Calczaf usage
+## CalcZAF usage
 
 I was using CalcZAF v 13.2.4.
 
@@ -61,3 +64,11 @@ zero oxygens for each H cation with this speciation.
 
 Workaround: open the input file, manually edit the H valence selecting zero oxygens for each 1 cation. Close the file. This doesn't alter the file, but does alter the state
 of CalcZAF for the remainder of your session so that it should read files correctly after this.
+
+Steps to run a given input file through calczaf:
+
+1. [optionally] If the sample has N specified as (NH4)2O, go to **File** --> **Open CalcZAF input data file**, then manually adjust the H speciation as described above. Then **File** --> **Close CalcZAF Input Data File**.
+2. If you need to use custom standards, follow CalcZAF documentation to add custom standards to the default database and save as a file. Select a custom database using **Standard** --> **Select Standard Database**. Please contact me for a copy of the standard database I used if you wish to re-run the calculations in this repo.
+3. Select the matric correction method and MAC tables. **Analytical** --> **ZAF, Phi-Rho-Z, Alpha Factor and Calibration Curve Selections**. In the dialogue, click the yellow button **ZAF - Phi-Rho-Z options** and select the desired method (here we use XPP). Optionally, back in the first dialogue click on **MAC tables** to select the MAC table to use (here we used the default, LINEMU).
+2. **File** --> **Open CalcZAF Input Data File And Calculate/Export All**. Select the file of interest, and a dialogue will ask for an export file name. Leave the default (same name ending in _Export) because the code in this repo is set up to look for files with this naming convention.
+
