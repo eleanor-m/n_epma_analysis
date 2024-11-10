@@ -2,7 +2,7 @@
 
 Repo containing data and analyses for nitrogen by EPMA project.
 
-Notebooks:
+## Notebooks:
 
 - `01_buddingtonite_ANU.ipynb`: Fits wavescan, reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results
 - `02_hyalophane_StA.ipynb`: Fits wavescan, reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results
@@ -13,11 +13,17 @@ Notebooks:
 - `07_basaltic_glasses_Nquant_D2872.ipynb`: Reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
 - `08_rhyolitic_glasses.ipynb`: Fits wavescan, reads raw EPMA data, applies corrections, writes a CalcZAF input file, reads CalcZAF outputs to produce results.
 - `09_quant_summary_figure.ipynb`: Summarise all quantitative analyses in a figure.
+- `10_count_logs.ipynb`: Count log analysis and figures
+- `11_wd_scans_at_different_conditions.ipynb`: Check effect of beam conditions on background shapes and peak shapes and produce figures.
+- `12_peak_shapes.ipynb`: read and transform the data, produce figure 5
+- `13_peak_shape_fits.ipynb`: perform background and peak fits of original and MC simulated data, and produce figure 7
+- `14_APF_relative_to_GaN.ipynb`: calculate APF values, produce figure 8 and part of table 2.
+- `15_APF_relative_to_BN.ipynb`: calculate APF values relative to BN. This also produces an alternative version of figure 8, and additional numbers added to table 2.
 
 
 With reference to the paper, the figures and tables are listed below, pointing to the relevant notebooks to reproduce the data/figures.
 
-Figures:
+## Figures:
 
 1. Figure 1: Buddingtonite + Tobelite count logs: `10_count_logs.ipynb`
 2. Figure 2: Glass, Cs- and Pb-nitrate count logs: `10_count_logs.ipynb`
@@ -30,7 +36,7 @@ Figures:
 9. Figure 9: Peak positions
 10. Figure 10: Measured vs reference values for the reference materials: `09_quant_summary_figure.ipynb`
 
-Tables:
+## Tables:
 
 1. Table 1: List of reference materials
 2. Table 2: APF results: `14_APF_relative_to_GaN.ipynb` and `15_APF_relative_to_BN.ipynb` 
@@ -42,7 +48,7 @@ Tables:
 
 
 
-## Peak shapes:
+## Peak shapes and APF values:
 
 1. Run `12_peak_shapes.ipynb` to read and transform the data, produce figure 5
 2. Run `13_peak_shape_fits.ipynb` to perform background and peak fits of original and MC simulated data, and produce figure 7
@@ -56,8 +62,6 @@ APF values from table 2 are used in `data/_dictionaries/apf_values.csv` and `dat
 The N_summary.csv or nitrogen_summary.csv files for each sample contains the typical standard deviations on individual spots, typical detection limits, and the standard deviations of multiple spots.
 
 These are summarised in the footnotes of each table providing quantitative results in the paper.
-
-
 
 ## CalcZAF usage
 
