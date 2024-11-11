@@ -1,0 +1,27 @@
+
+
+
+Measurement Condition 
+WDS elements 
+Element  X-ray Crystal   CH  Acc.v   Peak Pos.     (nm)    BG_L    BG_U (mm) 
+ 1 N     Ka     LDE1L   ( 5)  10.0    146.606    3.16000  15.000   7.000
+ 2 N     Ka     LDE1L   ( 5)  10.0    146.606    3.16000  26.000  30.000
+
+Element   Peak  Back        Pksk  Gain  High.V Base.L Window.W  Mode 
+ 1 N      90.0  45.0 (s)       1    32   1650   0.7    9.3 (V)   Dif
+ 2 N       2.0  45.0 (s)       1    32   1650   0.7    9.3 (V)   Dif
+
+Measurement Order of WDS 
+Order     Channel 1           2           3           4           5          
+  1               -           -           -           -           N_CH5_LD    
+  2               -           -           -           -           N_CH5_LD    
+
+Standard Data 
+Element   Standard name    Mass(%)   ZAF Fac.   Z        A        F 
+ 1 N      GaN               16.7324  10.7919  34.3719   0.3140   1.0000 
+ 2 N      GaN               16.7324  10.7919  34.3719   0.3140   1.0000 
+
+Standard Intensity of WDS 
+Element  Curr.(A)    Net(cps) Bg-(cps) Bg+(cps)  S.D.(%)  Date 
+ 1 N    5.040E-08      719.4     74.8     38.9     0.33   2021/11/18 12:48:00
+ 2 N    5.040E-08      719.4     74.8     38.9     0.33   2021/11/18 12:48:00

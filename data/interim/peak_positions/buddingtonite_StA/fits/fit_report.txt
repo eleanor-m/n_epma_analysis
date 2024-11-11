@@ -1,0 +1,72 @@
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 318
+    # data points      = 1912
+    # variables        = 10
+    chi-square         = 54.5783439
+    reduced chi-square = 0.02869524
+    Akaike info crit   = -6779.58427
+    Bayesian info crit = -6724.02522
+[[Variables]]
+    amplitude_1:  377.895200 +/- 52.7966419 (13.97%) (init = 13.1566)
+    center_1:     111.353579 +/- 0.56530963 (0.51%) (init = 100)
+    sigma_1:      5.38489836 +/- 0.50267219 (9.33%) (init = 0.1)
+    c_1:          0.07122089 +/- 0.01275509 (17.91%) (init = 0)
+    amplitude_2:  429.369250 +/- 59.9765940 (13.97%) (init = 14.4043)
+    center_2:     111.353579 +/- 0.56530963 (0.51%) == 'center_1'
+    sigma_2:      5.38489836 +/- 0.50267219 (9.33%) == 'sigma_1'
+    c_2:          0.09344676 +/- 0.01347569 (14.42%) (init = 0)
+    amplitude_3:  411.041137 +/- 57.4199177 (13.97%) (init = 12.94404)
+    center_3:     111.353579 +/- 0.56530963 (0.51%) == 'center_1'
+    sigma_3:      5.38489836 +/- 0.50267219 (9.33%) == 'sigma_1'
+    c_3:          0.07236222 +/- 0.01321311 (18.26%) (init = 0)
+    amplitude_4:  441.351622 +/- 61.6481675 (13.97%) (init = 14.48864)
+    center_4:     111.353579 +/- 0.56530963 (0.51%) == 'center_1'
+    sigma_4:      5.38489836 +/- 0.50267219 (9.33%) == 'sigma_1'
+    c_4:          0.02492970 +/- 0.01364958 (54.75%) (init = 0)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(amplitude_2, amplitude_4) = +0.9987
+    C(amplitude_3, amplitude_4) = +0.9986
+    C(amplitude_2, amplitude_3) = +0.9986
+    C(amplitude_1, amplitude_4) = +0.9985
+    C(amplitude_1, amplitude_2) = +0.9985
+    C(amplitude_1, amplitude_3) = +0.9984
+    C(center_1, amplitude_4)    = -0.9963
+    C(center_1, amplitude_2)    = -0.9963
+    C(center_1, amplitude_3)    = -0.9962
+    C(amplitude_1, center_1)    = -0.9961
+    C(sigma_1, amplitude_4)     = -0.9920
+    C(sigma_1, amplitude_2)     = -0.9919
+    C(sigma_1, amplitude_3)     = -0.9919
+    C(amplitude_1, sigma_1)     = -0.9917
+    C(center_1, sigma_1)        = +0.9800
+    C(center_1, c_4)            = +0.6311
+    C(amplitude_4, c_4)         = -0.6230
+    C(center_1, c_2)            = +0.6220
+    C(amplitude_2, c_2)         = -0.6149
+    C(center_1, c_3)            = +0.6072
+    C(amplitude_2, c_4)         = -0.6070
+    C(amplitude_3, c_4)         = -0.6070
+    C(amplitude_1, c_4)         = -0.6069
+    C(amplitude_3, c_3)         = -0.6017
+    C(c_2, amplitude_4)         = -0.5983
+    C(c_2, amplitude_3)         = -0.5982
+    C(amplitude_1, c_2)         = -0.5981
+    C(c_3, amplitude_4)         = -0.5841
+    C(amplitude_2, c_3)         = -0.5841
+    C(amplitude_1, c_3)         = -0.5840
+    C(center_1, c_1)            = +0.5783
+    C(amplitude_1, c_1)         = -0.5761
+    C(sigma_1, c_4)             = +0.5633
+    C(c_1, amplitude_4)         = -0.5563
+    C(c_1, amplitude_2)         = -0.5563
+    C(c_1, amplitude_3)         = -0.5562
+    C(sigma_1, c_2)             = +0.5551
+    C(sigma_1, c_3)             = +0.5420
+    C(sigma_1, c_1)             = +0.5162
+    C(c_2, c_4)                 = +0.4686
+    C(c_3, c_4)                 = +0.4575
+    C(c_2, c_3)                 = +0.4508
+    C(c_1, c_4)                 = +0.4357
+    C(c_1, c_2)                 = +0.4294
+    C(c_1, c_3)                 = +0.4192

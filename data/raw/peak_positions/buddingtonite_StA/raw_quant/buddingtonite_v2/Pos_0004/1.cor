@@ -1,0 +1,36 @@
+
+
+
+Measurement Condition 
+WDS elements 
+Element  X-ray Crystal   CH  Acc.v   Peak Pos.     (nm)    BG_L    BG_U (mm) 
+ 1 Al    Ka     TAP     ( 1)  10.0     90.644    0.83393   5.000   5.000
+ 2 Si    Ka     PETL    ( 2)  10.0    228.028    0.71254   5.000   5.000
+ 3 N     Ka     LDE1L   ( 5)  10.0    146.996    3.16000  15.000  13.000
+ 4 N     Ka     LDE1L   ( 5)  10.0    146.996    3.16000  26.000  30.000
+
+Element   Peak  Back        Pksk  Gain  High.V Base.L Window.W  Mode 
+ 1 Al     10.0   5.0 (s)       1    16   1778   0.7    9.3 (V)   Dif
+ 2 Si     10.0   5.0 (s)       1    32   1680   0.7     -  (V)   Int
+ 3 N      10.0  10.0 (s)       1    32   1650   0.7    9.3 (V)   Dif
+ 4 N       2.0  10.0 (s)       1    32   1650   0.7    9.3 (V)   Dif
+
+Measurement Order of WDS 
+Order     Channel 1           2           3           4           5          
+  1               Al_CH1_T    Si_CH2_P    -           -           N_CH5_LD    
+  2               -           -           -           -           N_CH5_LD    
+
+Calc. Elements :  O  (Anion)        
+
+Standard Data 
+Element   Standard name    Mass(%)   ZAF Fac.   Z        A        F 
+ 1 Al2O3  Orthoclase        18.5743   2.6974   3.1686   0.8401   1.0133 
+ 2 SiO2   Orthoclase        64.3898   1.9622   2.3085   0.8494   1.0007 
+ 3 N2O    BN                88.6785   9.3150  28.0328   0.3323   1.0000 
+
+Standard Intensity of WDS 
+Element  Curr.(A)    Net(cps) Bg-(cps) Bg+(cps)  S.D.(%)  Date 
+ 1 Al   1.003E-08     1130.4     24.0     13.4     0.43   2021/12/01 09:49:18
+ 2 Si   1.003E-08      707.9      1.1      0.9     0.53   2021/12/01 09:49:18
+ 3 N    1.003E-08      471.3     18.6     15.1     0.39   2021/12/01 10:04:45
+ 4 N    1.003E-08      471.3     18.6     15.1     0.39   2021/12/01 10:04:45

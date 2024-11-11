@@ -19,6 +19,8 @@ Repo containing data and analyses for nitrogen by EPMA project.
 - `13_peak_shape_fits.ipynb`: perform background and peak fits of original and MC simulated data, and produce figure 7
 - `14_APF_relative_to_GaN.ipynb`: calculate APF values, produce figure 8 and part of table 2.
 - `15_APF_relative_to_BN.ipynb`: calculate APF values relative to BN. This also produces an alternative version of figure 8, and additional numbers added to table 2.
+- `16_peak_positions.ipynb`: Process data from spots collected at different spectrometer positions.
+- `17_peak_positions_figure.ipynb`: Summarise results from different spectrometer positions and produce a figure.
 
 
 With reference to the paper, the figures and tables are listed below, pointing to the relevant notebooks to reproduce the data/figures.
@@ -33,7 +35,7 @@ With reference to the paper, the figures and tables are listed below, pointing t
 6. Figure 6: How APF was obtained for glass and buddingtonite: `12_peak_shapes.ipynb`
 7. Figure 7: How APF and uncertainty was calculated: `13_peak_shape_fits.ipynb`
 8. Figure 8: APF results: `14_APF_relative_to_GaN.ipynb`
-9. Figure 9: Peak positions
+9. Figure 9: Peak positions: `17_peak_positions_figure.ipynb`
 10. Figure 10: Measured vs reference values for the reference materials: `09_quant_summary_figure.ipynb`
 
 ## Tables:
@@ -46,7 +48,9 @@ With reference to the paper, the figures and tables are listed below, pointing t
 6. Table 6: Basaltic glasses - nitrogen results: Data is spread over four csv files (`data/processed/basaltic_glasses/N_summary_[sample].csv`) - produced in the relevant notebook for each sample. An easier way to get all the data is from `data/processed/nitrogen_summary_all_samples.csv` which is produced in `09_quant_summary_figure.ipynb`.
 7. Table 7: Rhyolitic glasses - nitrogen results `data/processed/rhyolitic_glasses/N_summary.ipynb` - created in `08_rhyolitic_glasses.ipynb`.
 
+## Count logs:
 
+1. Run `10_count_logs.ipynb` to summarise count logs and create figures
 
 ## Peak shapes and APF values:
 
@@ -56,6 +60,11 @@ With reference to the paper, the figures and tables are listed below, pointing t
 4. Run `15_APF_relative_to_BN.ipynb` to calculate APF values relative to BN. This also produces an alternative version of figure 8, and additional numbers added to table 2.
 
 APF values from table 2 are used in `data/_dictionaries/apf_values.csv` and `data/_dictionaries/apf_values_relative_to_BN.csv` for quantitative analysis.
+
+## Peak positions:
+
+- Run `16_peak_positions.ipynb` to process data from spots collected at different spectrometer positions - including fitting wavelength scans and correcting for the curved background. We don't create calczaf files for these spots because all we care about is the corrected k-ratio.
+- Run `17_peak_positions_figure.ipynb` to summarise results from different spectrometer positions and produce a figure.
 
 ## Uncertainties and detection limits:
 
