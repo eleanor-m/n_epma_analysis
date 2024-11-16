@@ -1,4 +1,4 @@
-# n_epma_analysis
+# Problems and solutions when quantifying nitrogen in silicate and oxide minerals and glasses using electron probe microanalysis
 
 Repo containing data and analyses for nitrogen by EPMA project.
 
