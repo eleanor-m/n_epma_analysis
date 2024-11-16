@@ -1,6 +1,8 @@
-# Problems and solutions when quantifying nitrogen in silicate and oxide minerals and glasses using electron probe microanalysis
+# Nitrogen by EPMA
 
 Repo containing data and analyses for nitrogen by EPMA project.
+
+To accompany paper: Problems and solutions when quantifying nitrogen in silicate and oxide minerals and glasses using electron probe microanalysis
 
 ## Notebooks:
 
