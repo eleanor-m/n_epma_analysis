@@ -33,7 +33,7 @@ With reference to the paper, the figures and tables are listed below, pointing t
 4. Figure 4: Four-point background correction method: `02_hyalophane_StA.ipynb`. This figure is based on a quantitative analysis of hyalophane so it is created in this notebook.
 5. Figure 5: How APF was obtained for nitrides: `11_wd_scans_at_different_conditions.ipynb`.
 6. Figure 6: How APF was obtained for glass and buddingtonite: `12_peak_shapes.ipynb`
-7. Figure 7: How APF and uncertainty was calculated: `13_peak_shape_fits.ipynb`
+7. Figure 7: How APF and uncertainty was calculated: `13b_peak_shape_fits_method.ipynb`
 8. Figure 8: APF results: `14_APF_relative_to_GaN.ipynb`
 9. Figure 9: Peak positions: `17_peak_positions_figure.ipynb`
 10. Figure 10: Measured vs reference values for the reference materials: `09_quant_summary_figure.ipynb`
